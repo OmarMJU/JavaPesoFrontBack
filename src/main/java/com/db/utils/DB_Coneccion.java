@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 /**
  * Clase que crea una conexion con la DB
  * @author omarjuarezurbina
- *
+ * 16/02/2020
  */
 public class DB_Coneccion {
 	private static Connection dbConnection = null;
