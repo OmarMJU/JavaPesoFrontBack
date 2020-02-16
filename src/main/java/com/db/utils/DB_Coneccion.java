@@ -5,8 +5,7 @@ import java.sql.DriverManager;
 
 /**
  * Clase que crea una conexion con la DB
- * @author Omar M. Juárez.
- * @category Proyecto Salud.
+ * @author omarjuarezurbina
  * 16/02/2020
  */
 public class DB_Coneccion {
