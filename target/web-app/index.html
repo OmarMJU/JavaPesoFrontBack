@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+  <link href="https://fonts.googleapis.com/css?family=Abel|Open+Sans+Condensed:300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/general-styles.css"/>
+  <link rel="stylesheet" href="css/modal-styles.css"/>
+  <link rel="stylesheet" href="css/animacion-styles.css"/>
+  <title>CONTROL DE PESO</title>
+</head>
+  <body>
+    <div class="contenedor-padre animacion-abajo-m4-s" id="contenedor-padre">
+      <div class="contenedor animacion-abajo-1-4-s" id="contenedor-hijo">
+        <div class="titulos">
+          <h1>Bienvenido al tu control de peso</h1>
+          <p>El control de peso te permite ver tu progreso en un tiempo determinado. Te ayudamos a mejorar y alcanzar tus metas.</p>
+        </div>
+
+        <div class="botones">
+          <button class="btn btn-primary" id="iniciaSesion" data-toggle="modal" data-target="#modalLogin">Inicia sesi&oacute;n</button>
+          <button class="btn btn-success" id="registro">Registrate</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL LOGIN. -->
+    <div class="fondo-modal" id="modalSesion">
+      <div class="contenedor-modal">
+
+        <div class="modal-hijos">
+
+          <div class="elementos-cabezera">
+            <h4>Inicia Sesi&oacute;n</h4>
+          </div>
+
+          <form class="formulario needs-validation" id="form-login" action="" method="post" novalidate>
+            <div class="form-row">
+              <div class="col-md-12 mb-5">
+                <input class="input-trnsp form-control" type="text" name="user" id="user" placeholder="Usuario" required>
+                <span class="valid-tooltip">As&iacute; s&iacute; puedo saber quien eres</span>
+                <span class="invalid-tooltip">Es necesario tu usuario para reconocerte</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-md-12 mb-5">
+                <input class="input-trnsp form-control" type="password" name="passwordUser" id="passwordUser" placeholder="Password" required>
+                <span class="valid-tooltip">Te prometo que no lo contar&eacute; a nadie</span>
+                <span class="invalid-tooltip">A veces necesitas contar alg&uacute;n secreto</span>
+              </div>
+            </div>
+
+            <div class="botones">
+              <button type="submit" class="btn btn-info" id="boton-login">Aceptar</button>
+              <button type="reset" class="btn btn-success" id="cancelarModalLogin">Cancelar</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL REGISTRATE. -->
+    <div class="fondo-modal" id="modalLogin">
+      <div class="contenedor-modal">
+        <div class="modal-hijos">
+
+          <div class="elementos-cabezera">
+            <img src="imgs/04.png" alt="People-Fitness">
+            <h4>Registrate</h4>
+          </div>
+
+          <form action="" class="formulario needs-validation" id="form-singup" method="post" novalidate>
+            <div class="form-row">
+              <div class="col-md-12 mb-5">
+                <input class="input-trnsp form-control" type="text" name="nombre" id="validationTooltip01" placeholder="Nombre(s)" required>
+                <span class="valid-tooltip">Esto se ve mejor</span>
+                <span class="invalid-tooltip">Necesito tu nombre para conocerte mejor</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-md-12 mb-5">
+                <input class="input-trnsp form-control" type="text" name="apellidos" id="validationTooltip02" placeholder="Apellidos" required>
+                <span class="valid-tooltip">Mucho mejor</span>
+                <span class="invalid-tooltip">Necesito tu apellido para conocerte mejor</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-md-12 mb-5">
+                <input class="input-trnsp form-control" type="email" name="correo" id="validationTooltip03" placeholder="E-mal" required>
+                <span class="valid-tooltip">Se ve muy bien</span>
+                <span class="invalid-tooltip">Tu correo es importanta para tenerte al tanto de tu progreso</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-md-12 mb-5">
+                <input class="input-trnsp form-control" type="password" name="password" id="validationTooltip04" placeholder="Password" required>
+                <span class="valid-tooltip">Es un buen password</span>
+                <span class="invalid-tooltip">Tu segurdad es importante, piensa en algun secreto</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-md-12 mb-5">
+                <input class="input-trnsp form-control" type="password" name="confirPass" id="validationTooltip05" placeholder="Comfirma Password" required>
+                <span class="valid-tooltip">Esto es excelente</span>
+                <span class="invalid-tooltip">Es necesario confirmar tu password</span>
+              </div>
+            </div>
+
+            <div class="botones">
+              <button type="submit" class="btn btn-info">Aceptar</button>
+              <button type="reset" class="btn btn-success" id="cancelarModal">Cancelar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARGA DE SCRIPTS JS. -->
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/miscelanea.js"></script>
+    <script type="text/javascript" src="js/general-functions.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/datos.js"></script>
+    <script type="text/javascript" src="js/validacion-form.js"></script>
+  </body>
+</html>

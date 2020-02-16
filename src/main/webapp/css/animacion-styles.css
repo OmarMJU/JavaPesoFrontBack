@@ -1,0 +1,57 @@
+.animacion-abajo-1-4-s {
+	animation-name: animacionDown1-4;
+	animation-duration: 1.4s;
+	-webkit-animation-name: animacionDown1-4;
+	-webkit-animation-duration: 1.4s;
+}
+
+@
+keyframes animacionDown1-4 {from { top:-200px;
+	opacity: 0;
+}
+
+to {
+	top: 0px;
+	opacity: 1;
+}
+
+}
+@
+-webkit-keyframes animacionDown1-4 {from { top:-200px;
+	opacity: 0;
+}
+
+to {
+	top: 0px;
+	opacity: 1;
+}
+
+}
+.animacion-abajo-m4-s {
+	animation-name: animacionDown-m4s;
+	animation-duration: 1.4s;
+	-webkit-animation-name: animacionDown-m4s;
+	-webkit-animation-duration: 1.4s;
+}
+
+@
+keyframes animacionDown-m4s {from { top:-200px;
+	opacity: 0;
+}
+
+to {
+	top: 0px;
+	opacity: 1;
+}
+
+}
+@
+-webkit-keyframes animacionDown-m4s {from { top:-200px;
+	opacity: 0;
+}
+
+to {
+	top: 0px;
+	opacity: 1;
+}
+}
