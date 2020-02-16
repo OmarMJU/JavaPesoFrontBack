@@ -20,15 +20,15 @@ public class DB_Coneccion {
 			return dbConnection;
 		} else {
 			try {
-//				String dbDriver = System.getenv("dbDriver");
-//				String connectionURL = System.getenv("dbConnectionURL");
-//				String userName = System.getenv("dbUserName");
-//				String userPass = System.getenv("dbPassword");
+				String dbDriver = System.getenv("dbDriver");
+				String connectionURL = System.getenv("dbConnectionURL");
+				String userName = System.getenv("dbUserName");
+				String userPass = System.getenv("dbPassword");
 				
-				String dbDriver = "com.mysql.jdbc.Driver";
-				String connectionURL = "jdbc:mysql://MySQL_Container:3306/prueba";
-				String userName = "root";
-				String userPass = "root";
+				// String dbDriver = "com.mysql.jdbc.Driver";
+				// String connectionURL = "jdbc:mysql://MySQL_Container:3306/prueba";
+				// String userName = "root";
+				// String userPass = "root";
 				
 				Class.forName(dbDriver).newInstance();
 				dbConnection = DriverManager.getConnection(connectionURL, userName, userPass);
