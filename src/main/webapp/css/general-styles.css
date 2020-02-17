@@ -41,3 +41,18 @@
 	display: flex;
 	justify-content: space-around;
 }
+
+.contenedor .contacto {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0;
+	margin: 5px;
+}
+
+.contenedor .contacto p {
+	font-weight: 20px;
+	font-size: 9px;
+	color: #ffffff;
+	padding: 10px 0 0 0;
+}
