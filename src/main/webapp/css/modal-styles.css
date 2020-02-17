@@ -19,15 +19,15 @@
 
 .contenedor-modal {
 	position: relative;
-	background-image: url("../imgs/03.jpg");
+	/* background-image: url("../imgs/03.jpg"); */
+	background-color: steelblue;
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: auto;
 	width: 40%;
 	padding: 20px;
 	border-radius: 15px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
-		rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0	rgba(0, 0, 0, 0.19);
 	animation-name: animaModal;
 	animation-duration: 0.4s;
 	-webkit-animation-name: animaModal;
@@ -67,28 +67,26 @@
 	margin: 0px 0px 10px 0px;
 }
 
-@
-keyframes animaModal {from { top:-30px;
-	opacity: 0;
+@keyframes animaModal {
+	from {
+		top:-30px;
+		opacity: 0;
+	} to {
+		top: 0;
+		opacity: 1;
+	}
 }
 
-to {
-	top: 0;
-	opacity: 1;
+@-webkit-keyframes animaModal {
+	from {
+		top:-30px;
+		opacity: 0;
+	} to {
+		top: 0;
+		opacity: 1;
+	}
 }
 
-}
-@
--webkit-keyframes animaModal {from { top:-30px;
-	opacity: 0;
-}
-
-to {
-	top: 0;
-	opacity: 1;
-}
-
-}
 .input-trnsp {
 	border: 0px;
 	background: rgba(0, 0, 0, 0.4);
