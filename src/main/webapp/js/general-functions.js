@@ -1,3 +1,12 @@
+/**
+ * Funciones generales para el proyecto.
+ * Omar M. Juarez.
+ * 23/02/2020
+ */
+
+ /**
+  * Funcion que redimenciona a los elementos contenedores.
+  */
 (function() {
   window.addEventListener("load", function() {
     var contenedorPadre = document.getElementById("contenedor-padre");

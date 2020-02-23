@@ -1,3 +1,15 @@
+/**
+ * Funciones que envian los datos a los controladores para la persistencia con la DB.
+ * Omar M. Juarez.
+ * 23/02/2020
+ * @param {*} e 
+ */
+
+ /**
+  * Toma los datos del modal login, los convierte a una cadena tipo JSON
+  * y los envia al controlador Login_Controller.
+  * @param {*} e 
+  */
 function createRequestJsonLogin(e) {
     e.preventDefault();
     var usuarioL = document.getElementById("user");
@@ -7,6 +19,11 @@ function createRequestJsonLogin(e) {
     sendDatasController(datosUsuarioL, "Login_Controller");
 }
 
+/**
+  * Toma los datos del modal singup, los convierte a una cadena tipo JSON
+  * y los envia al controlador Singup_Controller.
+  * @param {*} e 
+  */
 function createRequestJsonSingup(e) {
     e.preventDefault();
     var nombreReg = document.getElementById("validationTooltip01");
@@ -18,6 +35,10 @@ function createRequestJsonSingup(e) {
     sendDatasController(datosUsuarioR, "Singup_Controller");
 }
 
+/**
+  * Envia los datos al respectivo contralodor en formato JSON.
+  * @param {*} e 
+  */
 function sendDatasController(datasUser, acctionForm) {
     var mnsg;
     var envioObjet = new XMLHttpRequest();
