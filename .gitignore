@@ -1,4 +1,3 @@
 .*
 !.gitignore
-.class
-target
+target/
