@@ -10,11 +10,10 @@ Para poder correr este proyecto es necesario usar **Docker** y crear una imagen 
 ```
 docker -t build javaapp .
 ```
-
 Poterior a ello se requiere ejecutar el contenedor de la imagen creada.
-
 ```
 docker run --name Java_App_Container -p 8080:8080 -d javaapp
 ```
+Despues es necesario abrir un navegador y colocar ```localhost:8080```.
 
 ### Happy Hacking!!
