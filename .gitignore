@@ -1,4 +1,3 @@
 .*
 !.gitignore
-/target/classes/com
-target/index.html
+target/
